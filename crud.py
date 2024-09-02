@@ -17,7 +17,10 @@ def update_user(index,new_record):
     else:
         print("Invalid index")
         
-    
+def delete_user(index):
+    if 0 <= index < len(users_data):
+        print('Deleting data...')
+        del users_data(index)
     
 create_user({'id':1,'name':'Ali Haider','age':22})
 
